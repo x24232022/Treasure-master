@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--DrawerLayout 抽屉-->
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <!-- 内容-->
+    <include
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/content_home"/>
+    <!-- 视图(Drawer) NavigationView-->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navgation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@color/colorDrawerBackground"
+        app:menu="@menu/menu_drawer"
+        app:itemTextColor="@color/selector_nav_icon_colors"
+        app:headerLayout="@layout/layout_navi_hreader"
+        >
+
+    </android.support.design.widget.NavigationView>
+    <!--app:headerLayout-->
+    <!--app:menu-->
+    <!--android:layout_gravity: start(左侧抽屉) or end(右侧抽屉)-->
+
+</android.support.v4.widget.DrawerLayout>
+
+
+
+
